@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityFragmenLayout.Activity.activity_uno"
+    android:background="#17009688"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/lyBarraNav_activityuno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+
+            android:id="@+id/btnactivityuno_activityuno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Primer Activity"
+            />
+        <Button
+            android:id="@+id/btnactivitydos_activityuno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Segundo Activity"
+            android:layout_marginHorizontal="5dp"
+            />
+        <Button
+            android:id="@+id/btnactivitytres_activityuno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tercero Activity"
+
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtbienvenido_activityuno"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Bienvenido al Activity UNO"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="#E1DBC7"
+        app:layout_constraintTop_toBottomOf="@+id/lyBarraNav_activityuno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <View
+        android:id="@+id/lineados_activituuno"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/txtbienvenido_activityuno"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lineados_activituuno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:id="@+id/txtnombreactivityuno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ingrese su nombre"
+            android:layout_marginEnd="10dp"
+            />
+        <EditText
+            android:id="@+id/txtapellidoactivityuno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ingrese su apellido"
+            android:layout_marginStart="10dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
